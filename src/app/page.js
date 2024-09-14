@@ -1,7 +1,7 @@
 "use client"
-import BlogCard from "./components/BlogCard";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import BlogCard from './components/blogCard';
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -11,10 +11,11 @@ export default function Home() {
   useEffect(() => {
     async function fetchPosts() {
       const response = await axios.get('http://localhost:4000/posts');
-      setPosts(response.data);
+      setPosts(response?.data);
     }
     fetchPosts();
   }, []);
+  console.log(posts)
 
   const deletePost = async (id) => {
     await axios.delete(`/posts/${id}`);
