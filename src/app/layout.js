@@ -16,18 +16,19 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "Blog Website",
-  description: "Completed by Shaily Sarker",
+  description: "Coding by Shaily Sarker",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="lg:px-20 md:px-12 px-5 bg-slate-200">
-      <Header />
+    <html lang="en" className="">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
+        <Header />
+        <div className="lg:px-20 md:px-12 px-5 bg-slate-200">
+          {children}
+        </div>
+        <Footer />
       </body>
-
-      <Footer />
     </html>
   );
 }
