@@ -15,6 +15,12 @@ export default function Header() {
                 <Link href="/createPost" className={`${"/createPost" === currentPath && "border-b-2 border-white" } px-1`}>
                     <li>Create Post</li>
                 </Link>
+                <Link href="/aboutUs" className={`${"/aboutUs" === currentPath && "border-b-2 border-white" } px-1`}>
+                    <li>About Us</li>
+                </Link>
+                <Link href="/ContactUs" className={`${"/ContactUs" === currentPath && "border-b-2 border-white" } px-1`}>
+                    <li>Contact Us</li>
+                </Link>
             </ul>
             <h1 className='md:w-[25%] md:block hidden'></h1>
         </div>
