@@ -34,7 +34,7 @@ export default function Form({ onSubmit }) {
                     id="title"
                     value={title}
                     onChange={(e) => setTitle(e?.target?.value)}
-                    className="bg-white"
+                    className="bg-white text-black"
                     placeholder="Write your post title.."
                     required
                 />
@@ -46,7 +46,7 @@ export default function Form({ onSubmit }) {
                     id="content"
                     value={content}
                     onChange={(e) => setContent(e?.target?.value)}
-                    className="bg-white"
+                    className="bg-white text-black"
                     rows="6"
                     required />
             </div>
