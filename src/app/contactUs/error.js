@@ -1,5 +1,6 @@
 "use client"; // Error components must be Client Components
 
+import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 
 export default function Error({ error, reset }) {
@@ -9,16 +10,15 @@ export default function Error({ error, reset }) {
     }, [error]);
 
     return (
-        <div>
+        <div className="text-center lg:pt-72 md:pt-64 pt-60 font-bold lg:text-xl md:text-lg text-base text-black h-screen">
             <h2 className="text-black">Something went wrong fetching posts segment!</h2>
-            <button
+            <Button
                 onClick={
-                    // Attempt to recover by trying to re-render the segment
                     () => reset()
                 }
             >
                 Try again
-            </button>
+            </Button>
         </div>
     );
 }
