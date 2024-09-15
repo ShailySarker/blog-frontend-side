@@ -61,7 +61,7 @@ export default function ViewPost() {
                                     Back
                                 </Button>
                                 <Button className="lg:w-44 md:w-40 w-36 md:text-lg text-base font-semibold lg:py-5 md:py-4 py-3" onClick={() => setIsEditing(true)}>
-                                    Let's Edit Post
+                                    Edit
                                 </Button>
                             </div>
                         </div>
