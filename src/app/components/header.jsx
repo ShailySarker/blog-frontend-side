@@ -18,7 +18,7 @@ export default function Header() {
                 <Link href="/aboutUs" className={`${"/aboutUs" === currentPath && "border-b-2 border-white" } px-1`}>
                     <li>About Us</li>
                 </Link>
-                <Link href="/contactUs" className={`${"/ContactUs" === currentPath && "border-b-2 border-white" } px-1`}>
+                <Link href="/contactUs" className={`${"/contactUs" === currentPath && "border-b-2 border-white" } px-1`}>
                     <li>Contact Us</li>
                 </Link>
             </ul>
