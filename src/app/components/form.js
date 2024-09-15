@@ -28,7 +28,7 @@ export default function Form({ onSubmit }) {
     return (
         <form onSubmit={handleSubmit} className='flex flex-col lg:gap-8 md:gap-6 gap-4 lg:mt-12 md:mt-9 mt-7 border-2 border-slate-400 lg:p-16 md:p-10 p-4 rounded-xl shadow-md'>
             <div className="grid w-full items-center lg:gap-2 md:gap-1.5 gap-1">
-                <Label className="lg:text-xl md:text-lg text-base font-semibold" htmlFor="title">Title <span className='text-red-500 font-bold'>*</span></Label>
+                <Label className="lg:text-xl md:text-lg text-base font-semibold text-black" htmlFor="title">Title <span className='text-red-500 font-bold'>*</span></Label>
                 <Input
                     type="text"
                     id="title"
@@ -40,7 +40,7 @@ export default function Form({ onSubmit }) {
                 />
             </div>
             <div className="grid w-full lg:gap-2 md:gap-1.5 gap-1">
-                <Label className="lg:text-xl md:text-lg text-base font-semibold" htmlFor="content">Content <span className='text-red-500 font-bold'>*</span></Label>
+                <Label className="lg:text-xl md:text-lg text-base font-semibold text-black" htmlFor="content">Content <span className='text-red-500 font-bold'>*</span></Label>
                 <Textarea
                     placeholder="Write your post content.."
                     id="content"

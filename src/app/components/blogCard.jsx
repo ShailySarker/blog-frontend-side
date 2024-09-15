@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function BlogCard({ post, onDelete }) {
   return (
     <div className="lg:p-6 p-4 shadow-lg bg-white border-2 border-slate-400 rounded-xl">
-      <h3 className="md:text-xl text-lg text-center font-bold">{post?.title}</h3>
+      <h3 className="md:text-xl text-lg text-center font-bold text-black">{post?.title}</h3>
       <p className="text-gray-700 lg:mt-5 md:mt-4 mt-3 text-justify">{post?.content.slice(0, 140)}...</p>
       <div className="lg:mt-8 md:mt-7 mt-6 flex justify-center">
         <Link href={`/post/${post?.id}`}>

@@ -1,3 +1,3 @@
 export default function NotFound() {
-    return <div>The requested resource was not found!</div>;
+    return <div className="text-black">The requested resource was not found!</div>;
 }
