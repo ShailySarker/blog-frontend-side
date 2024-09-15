@@ -15,7 +15,7 @@ export default function Footer() {
           <h2 className="lg:text-2xl md:text-xl text-lg font-bold">Quick Links</h2>
           <div className="flex md:gap-20 gap-28 lg:mt-7 md:mt-5 mt-3">
             <div className="flex flex-col lg:gap-3 md:gap-2 gap-[6px] lg:text-lg md:text-base text-sm font-medium">
-              <ul className="">                  All Products                </ul>
+              <ul className="">                  All Posts                </ul>
               <ul className="">About Us                </ul>
               <ul className="">                  Contact Us               </ul>
               <ul className="">Help                </ul>
